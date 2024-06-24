@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        .main-container {
+            width: 100vw;
+            height: 100vh;
+            background-color: lightgray;
+        }
+        .form-container {
+            width: 80%;
+            height: 100%;
+            background-color: whitesmoke;
+            margin-left: 10%;
+        }
+        .title-text {
+            text-align: center;
+            font-size: 40px;
+            font-weight: bolder;
+            font-style: italic;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: brown;
+        }
+        .fieldset-style {
+        font-size: 28px;
+        font-family: cursive;
+        color: brown;
+      }
+      .label-style {
+        font-size: 24px;
+        height: 44px;
+        font-weight:500;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      .input-field {
+        width: 300px;
+        height: 44px;
+        background-color: rgb(219, 234, 240);
+      }
+      .input-address-field {
+        background-color: rgb(219, 234, 240)    ;
+        align-items: center;
+      }
+      .radio-btn-styl {
+        margin: 10px;
+        height: 20px;
+        width: 20px;
+      }
+      .radio-btn-fields {
+        font-size: 20px;
+        font-family: cursive;
+      }
+     </style>
+</head>
+<body style="margin: 0px;">
+    <div class="main-container">
+        <div class="form-container">
+            <p class="title-text">Student Registration Form</p>
+            <div style="width: 100%; height: 80%;">
+                <form>
+                    <!-- Personal Info include First Name, Last Name, DOB, Gender, Contact, Email and Address -->
+                    <fieldset>
+                        <legend class="fieldset-style">Personal Information</legend>
+                        <label class="label-style"> First Name </label>
+                        <input type="text" class="input-field" />
+                        <br /><br />
+                        <label class="label-style"> Last Name </label>
+                        <input type="text" class="input-field" />
+                        <br /><br />
+                        <label class="label-style"> DOB </label>
+                        <input type="date" class="input-field" />
+                        <br /><br />
+                        <label class="label-style"> Gender </label>
+                        <input class="radio-btn-styl" type="radio" id="male" name="gender" value="MALE"  class="radio-button"/>
+                        <label class="radio-btn-fields" for="male">Male</label>
+                        <input  class="radio-btn-styl" type="radio" id="female" name="gender" value="FEMALE" />
+                        <label  class="radio-btn-fields" for="female">Female</label>
+                        <input  class="radio-btn-styl" type="radio" id="others" name="gender" value="OTHERS" />
+                        <label  class="radio-btn-fields" for="others">Others</label>
+                        <br /><br />
+                        <label class="label-style"> Contact Number </label>
+                        <input type="number" class="input-field" />
+                        <br /><br />
+                        <label class="label-style"> Email </label>
+                        <input type="text" class="input-field" />
+                        <br /><br />
+                        <label class="label-style"> Address </label>
+                        <textarea class="input-address-field" type="text" name="address" id="address" rows="5" cols="50"></textarea>
+                    </fieldset>
+
+                    <br />
+                    
+                    <!-- VISA Information -->
+                    <fieldset>
+                        <legend class="fieldset-style">VISA Information</legend>
+                        <label class="label-style"> Country of Citizenship </label>
+                        <select id="country" class="input-field">
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>Canada</option>
+                            <option>Japan</option>
+                            <option>France</option>
+                            <option>Spain</option>
+                        </select>
+                        <br /><br />
+                        <label class="label-style"> What type of visa do you currently hold? </label>
+                        <select id="country" class="input-field">
+                            <option>F1</option>
+                            <option>F2</option>
+                            <option>H1</option>
+                            <option>H4</option>
+                            <option>B1</option>
+                            <option>B2</option>
+                            <option>NONE</option>
+                            <option>OTHER</option>
+                        </select>
+                        <br /><br />
+                        <label class="label-style"> Are you applying for a change of status to F1? </label>
+                        <input class="radio-btn-styl" type="radio" id="yes" name="visaStatus" value="yes"  class="radio-button"/>
+                        <label class="radio-btn-fields" for="yes">Yes</label>
+                        <input  class="radio-btn-styl" type="radio" id="no" name="visaStatus" value="no" />
+                        <label  class="radio-btn-fields" for="no">No</label>
+                        <br /><br />
+                        <label class="label-style"> Do you require an I-20 for your spouse? </label>
+                        <input class="radio-btn-styl" type="radio" id="yes" name="i20" value="yes"  class="radio-button"/>
+                        <label class="radio-btn-fields" for="yes">Yes</label>
+                        <input  class="radio-btn-styl" type="radio" id="no" name="i20" value="no" />
+                        <label  class="radio-btn-fields" for="no">No</label>
+                        <br /><br />
+                        <label class="label-style"> Which type of visa you held at the port of entry? </label>
+                        <input type="text" class="input-field" />
+                        <br /><br />
+                        <label class="label-style">  Are you a permanent resident? </label>
+                        <input class="radio-btn-styl" type="radio" id="yes" name="permanent" value="yes"  class="radio-button"/>
+                        <label class="radio-btn-fields" for="yes">Yes</label>
+                        <input  class="radio-btn-styl" type="radio" id="no" name="permanent" value="no" />
+                        <label  class="radio-btn-fields" for="no">No</label>
+                        <br /><br />
+                    </fieldset>
+                    
+                    <br />
+                    
+                    <!-- Academic Information -->
+                    <fieldset>
+                        <legend class="fieldset-style">Academic Information</legend>
+                        <label class="label-style"> Master Program you choose to pursue </label>
+                        <select id="masterprogram" class="input-field">
+                            <option>Program 1</option>
+                            <option>Program 2</option>
+                            <option>Program 3</option>
+                        </select>
+                        <br /><br />
+                        <label class="label-style">Specialization </label>
+                        <select id="speacialization" class="input-field">
+                            <option>Programmer</option>
+                            <option>Cloud</option>
+                            <option>Architect</option>
+                            <option>Analyst</option>
+                        </select>
+                        <br /><br />
+                        <label class="label-style"> Semester </label>
+                        <input class="radio-btn-styl" type="radio" id="spring" name="semester" value="spring"  class="radio-button"/>
+                        <label class="radio-btn-fields" for="spring">Spring</label>
+                        <input  class="radio-btn-styl" type="radio" id="summer" name="semester" value="summer" />
+                        <label  class="radio-btn-fields" for="summer">Summer</label>
+                        <input  class="radio-btn-styl" type="radio" id="fall" name="semester" value="fall" />
+                        <label  class="radio-btn-fields" for="fall">Fall</label>
+                        <br /><br />
+                        <label class="label-style"> Previous Degree Earned </label>
+                        <input class="radio-btn-styl" type="radio" id="bachelors" name="degree" value="bachelors"  class="radio-button"/>
+                        <label class="radio-btn-fields" for="bachelors">Bachelors</label>
+                        <input  class="radio-btn-styl" type="radio" id="masters" name="degree" value="masters" />
+                        <label  class="radio-btn-fields" for="masters">Masters</label>
+                        <br /><br />
+                        <label class="label-style"> Previous University Name </label>
+                        <input type="text" class="input-field" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
