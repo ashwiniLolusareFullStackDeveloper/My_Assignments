@@ -30,7 +30,8 @@
         font-size: 24px;
         height: 44px;
         font-weight:500;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: "Lato", sans-serif;
+
       }
       .input-field {
         width: 300px;
@@ -41,7 +42,7 @@
         background-color: rgb(219, 234, 240)    ;
         align-items: center;
       }
-      .radio-btn-styl {
+      .radio-btn-style {
         margin: 10px;
         height: 20px;
         width: 20px;
@@ -51,6 +52,9 @@
         font-family: cursive;
       }
      </style>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body style="margin: 0px;">
     <div class="main-container">
@@ -60,6 +64,7 @@
                 <form>
                     <!-- Personal Info include First Name, Last Name, DOB, Gender, Contact, Email and Address -->
                     <fieldset>
+                        <!-- A text field -->
                         <legend class="fieldset-style">Personal Information</legend>
                         <label class="label-style"> First Name </label>
                         <input type="text" class="input-field" />
@@ -70,20 +75,23 @@
                         <label class="label-style"> DOB </label>
                         <input type="date" class="input-field" />
                         <br /><br />
+                        <!-- A label with radio button as options -->
                         <label class="label-style"> Gender </label>
-                        <input class="radio-btn-styl" type="radio" id="male" name="gender" value="MALE"  class="radio-button"/>
+                        <input class="radio-btn-style" type="radio" id="male" name="gender" value="MALE"  class="radio-button"/>
                         <label class="radio-btn-fields" for="male">Male</label>
-                        <input  class="radio-btn-styl" type="radio" id="female" name="gender" value="FEMALE" />
+                        <input  class="radio-btn-style" type="radio" id="female" name="gender" value="FEMALE" />
                         <label  class="radio-btn-fields" for="female">Female</label>
-                        <input  class="radio-btn-styl" type="radio" id="others" name="gender" value="OTHERS" />
+                        <input  class="radio-btn-style" type="radio" id="others" name="gender" value="OTHERS" />
                         <label  class="radio-btn-fields" for="others">Others</label>
                         <br /><br />
+                        <!-- A label with text as numbers -->
                         <label class="label-style"> Contact Number </label>
                         <input type="number" class="input-field" />
                         <br /><br />
                         <label class="label-style"> Email </label>
                         <input type="text" class="input-field" />
                         <br /><br />
+                        <!-- A label with textarea with 5 lines and 50 columns -->
                         <label class="label-style"> Address </label>
                         <textarea class="input-address-field" type="text" name="address" id="address" rows="5" cols="50"></textarea>
                     </fieldset>
@@ -92,6 +100,7 @@
                     
                     <!-- VISA Information -->
                     <fieldset>
+                        <!-- A form with dropdown options -->
                         <legend class="fieldset-style">VISA Information</legend>
                         <label class="label-style"> Country of Citizenship </label>
                         <select id="country" class="input-field">
@@ -116,24 +125,24 @@
                         </select>
                         <br /><br />
                         <label class="label-style"> Are you applying for a change of status to F1? </label>
-                        <input class="radio-btn-styl" type="radio" id="yes" name="visaStatus" value="yes"  class="radio-button"/>
+                        <input class="radio-btn-style" type="radio" id="yes" name="visaStatus" value="yes"  class="radio-button"/>
                         <label class="radio-btn-fields" for="yes">Yes</label>
-                        <input  class="radio-btn-styl" type="radio" id="no" name="visaStatus" value="no" />
+                        <input  class="radio-btn-style" type="radio" id="no" name="visaStatus" value="no" />
                         <label  class="radio-btn-fields" for="no">No</label>
                         <br /><br />
                         <label class="label-style"> Do you require an I-20 for your spouse? </label>
-                        <input class="radio-btn-styl" type="radio" id="yes" name="i20" value="yes"  class="radio-button"/>
+                        <input class="radio-btn-style" type="radio" id="yes" name="i20" value="yes"  class="radio-button"/>
                         <label class="radio-btn-fields" for="yes">Yes</label>
-                        <input  class="radio-btn-styl" type="radio" id="no" name="i20" value="no" />
+                        <input  class="radio-btn-style" type="radio" id="no" name="i20" value="no" />
                         <label  class="radio-btn-fields" for="no">No</label>
                         <br /><br />
                         <label class="label-style"> Which type of visa you held at the port of entry? </label>
                         <input type="text" class="input-field" />
                         <br /><br />
                         <label class="label-style">  Are you a permanent resident? </label>
-                        <input class="radio-btn-styl" type="radio" id="yes" name="permanent" value="yes"  class="radio-button"/>
+                        <input class="radio-btn-style" type="radio" id="yes" name="permanent" value="yes"  class="radio-button"/>
                         <label class="radio-btn-fields" for="yes">Yes</label>
-                        <input  class="radio-btn-styl" type="radio" id="no" name="permanent" value="no" />
+                        <input  class="radio-btn-style" type="radio" id="no" name="permanent" value="no" />
                         <label  class="radio-btn-fields" for="no">No</label>
                         <br /><br />
                     </fieldset>
@@ -159,17 +168,17 @@
                         </select>
                         <br /><br />
                         <label class="label-style"> Semester </label>
-                        <input class="radio-btn-styl" type="radio" id="spring" name="semester" value="spring"  class="radio-button"/>
+                        <input class="radio-btn-style" type="radio" id="spring" name="semester" value="spring"  class="radio-button"/>
                         <label class="radio-btn-fields" for="spring">Spring</label>
-                        <input  class="radio-btn-styl" type="radio" id="summer" name="semester" value="summer" />
+                        <input  class="radio-btn-style" type="radio" id="summer" name="semester" value="summer" />
                         <label  class="radio-btn-fields" for="summer">Summer</label>
-                        <input  class="radio-btn-styl" type="radio" id="fall" name="semester" value="fall" />
+                        <input  class="radio-btn-style" type="radio" id="fall" name="semester" value="fall" />
                         <label  class="radio-btn-fields" for="fall">Fall</label>
                         <br /><br />
                         <label class="label-style"> Previous Degree Earned </label>
-                        <input class="radio-btn-styl" type="radio" id="bachelors" name="degree" value="bachelors"  class="radio-button"/>
+                        <input class="radio-btn-style" type="radio" id="bachelors" name="degree" value="bachelors"  class="radio-button"/>
                         <label class="radio-btn-fields" for="bachelors">Bachelors</label>
-                        <input  class="radio-btn-styl" type="radio" id="masters" name="degree" value="masters" />
+                        <input  class="radio-btn-style" type="radio" id="masters" name="degree" value="masters" />
                         <label  class="radio-btn-fields" for="masters">Masters</label>
                         <br /><br />
                         <label class="label-style"> Previous University Name </label>
