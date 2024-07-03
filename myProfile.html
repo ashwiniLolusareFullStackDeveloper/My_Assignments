@@ -9,19 +9,24 @@
         height: 100vh;
     }
     #home {
-        height: 700px;
+        height: 600px;
+        /* background-color: rebeccapurple; */
     }
     #skills {
-        height: 800px;
+        height: 600px;
+        /* background-color: red; */
     }
     #project {
         height: 500px;
+        /* background-color: blue; */
     }
     #about {
-        height: 600px;
+        height: 500px;
+        /* background-color: blueviolet; */
     }
     #contact {
         height: 500px;
+        /* background-color: brown; */
     }
     .row-one {
         height: 80px;
@@ -38,8 +43,8 @@
     .home-text {
         text-align: center;
         font-size: 50px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: bolder;
+        font-family:cursive;
+        font-weight: bold;
     }
     .intro-text {
         text-align: center;
@@ -56,12 +61,12 @@
     .skills-heading {
         text-align: center;
         font-size: 50px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family:cursive;
         font-weight: bold;
     }
     .skill-section {
         height: 100%;
-        margin: 10%;
+        /* margin: 10%; */
     }
     .skill-table {
         width: 100%;
@@ -108,17 +113,32 @@
         font-size: 25px;
         font-family:sans-serif
     }
+    html {
+        scroll-behavior: smooth;
+    }
+    .header-text {
+        padding-left: 30px; 
+        width: 60%; 
+        text-align: left; 
+        font-size: 30px;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: bolder;
+        color: brown;
+    }
 </style>
 <!-- get font from external source -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body style="margin: 0px;">
-    <table>
+    <table style="border-collapse: collapse;">
         <!-- Heading with nav options -->
         <tr class="row-one" style="background-color: rgb(28, 93, 73);">
-            <td style="padding-left: 30px; width: 60%; text-align: left; font-size: 24px;"><a href="myProfile.html" style="color: white;">Ashwini Kesare - Full Stack Developer</a></td>
+            <td class="header-text"><a href="myProfile.html" style="color:greenyellow;">Ashwini Kesare - Full Stack Developer</a></td>
             <td class="td"><a href="#home">Home</a></td>
             <td class="td"><a href="#about">About</a></td>
             <td class="td"><a href="#skills">Skills</td>
@@ -147,7 +167,7 @@
                     <div class="about-image">
                         <img src="https://i.pinimg.com/736x/3c/38/24/3c38242fc1ae730454170da196390ad9.jpg" height="400" width="400" alt="">
                     </div>
-                    <div class="about-text" style="margin: 20px;">
+                    <div class="about-text" style="margin: 10px;">
                         <p class="home-text">About Me</p>
                         <p class="about-text"> Graduated with distinction at Bachelor Of Engineering in Computer Technology Branch.</p>
                         <p class="about-text"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam dignissimos aliquam reprehenderit ducimus? Quidem voluptate quasi voluptatibus voluptas illo. Totam, natus quia aliquid explicabo maiores perferendis odio id quae aperiam.</p>
@@ -160,7 +180,7 @@
         <!-- Skill section on click of Skills nav option. Making use of table -->
         <tr id="skills">
             <td colspan="7">
-                <div class="skill-section" style="padding-top: 50px;">
+                <div class="skill-section" style="padding-top: 30px;">
                     <p class="skills-heading">Skills</p>
                     <table class="skill-table">
                         <tr class="skill-row">
@@ -176,6 +196,10 @@
                                 <h2>UI/UX Design</h2>
                                 <p class="skill-text">In digital design, user interface (UI) refers to the interactivity, look, and feel of a product screen or
                                       web page, while user experience (UX) covers a user's overall experience with the product or website.</p>
+                            </td>
+                            <td class="skills-data">
+                                <h2>React Native</h2>
+                                <p class="skill-text"> React Native is an open-source UI software framework created by Meta Platforms, Inc; used to develop applications for Android, Android TV, iOS, macOS, tvOS, Web, Windows and UWP by enabling developers to use the React framework along with native platform capabilities. </p>
                             </td>
                         </tr>
                     </table>

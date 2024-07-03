@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layout Three Using Flex</title>
+    <style>
+        .main-container {
+            background-color: lightblue;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: row;
+        }
+        .box-one {
+            background-color: purple;
+            width: 20%;
+            height: 80%;
+            margin-left: 10%;
+            margin-top: 10%;
+        }
+        .box-two {
+            background-color: yellowgreen;
+            width: 20%;
+            height: 80%;
+            margin-top: 10%;
+            display: flex;
+            flex-direction: column;
+        }
+        .box-three {
+            background-color: blueviolet;
+            width: 20%;
+            height: 80%;
+            margin-top: 10%;
+            flex-direction: column;
+        }
+        .box-four {
+            background-color: palevioletred;
+            width: 20%;
+            height: 80%;
+            margin-top: 10%;
+            flex-direction: column;
+        }
+        .col-two-row-one {
+            background-color: brown;
+            height: 40%;
+        }
+        .col-two-row-two {
+            background-color: aqua;
+            height: 25%;
+        }
+        .col-three-row-one {
+            background-color: aqua;
+            height: 65%;
+        }
+        .col-three-row-two {
+            background-color: yellowgreen;
+            height: 35%;
+        }
+        .col-four-row-one {
+            background-color: red;
+            height: 45%; 
+        }
+        .col-four-row-two {
+            background-color: orange;
+            height: 55%; 
+        }
+
+    </style>
+</head>
+<body style="margin: 0px;">
+    <div class="main-container">
+        <div class="box-one"></div>
+        <div class="box-two">
+            <div class="col-two-row-one"></div>
+            <div class="col-two-row-two"></div>
+            <div class="col-two-row-three"></div>
+        </div>
+        <div class="box-three">
+            <div class="col-three-row-one"></div>
+            <div class="col-three-row-two"></div>
+        </div>
+        <div class="box-four">
+            <div class="col-four-row-one"></div>
+            <div class="col-four-row-two"></div>
+        </div>
+    </div>
+</body>
+</html>

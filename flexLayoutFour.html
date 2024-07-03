@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Layout Four Using Flex</title>
+    <style>
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+        }
+        .column-one {
+            height: 50%;
+            background-color: blue;
+           margin: 10%;
+           margin-bottom: 0px;
+           display: flex;
+           flex-direction: row;
+        }
+        .column-two {
+            height: 50%;
+            background-color: cadetblue;
+            margin: 10%;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .box-one {
+            height: 100%;
+            width: 30%;
+        }
+        .box-two {
+            display: flex;
+            flex-direction: column;
+            background-color: brown;
+            height: 100%;
+            width: 70%;
+        }
+        .box-three {
+            width: 100%;
+            height: 40%;
+            background-color: orangered;
+        }
+        .box-four {
+            width: 100%;
+            height: 20%;
+            background-color: yellow;
+        }
+        .col-one {
+            height: 100%;
+            width: 30%;
+        }
+        .col-two {
+            height: 100%;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+        }
+        .col-two-row-one {
+            background-color: brown;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .col-two-row-two {
+            background-color: darkmagenta;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+        .child-one {
+            width: 100%;
+            height: 35%;
+            background-color: aqua;
+        }
+        .child-two {
+            width: 100%;
+            height: 35%;
+            background-color: chocolate;
+        }
+        .child-three {
+            width: 100%;
+            height: 30%;
+        }
+        .row-child-one {
+            width: 40%;
+            height: 100%;
+        }
+        .row-child-two {
+            width: 40%;
+            height: 100%;
+            background-color: cornflowerblue;
+        }
+        .row-child-three {
+            width: 20%;
+            height: 100%;
+            background-color: darkgreen;
+        }
+
+    </style>
+</head>
+<body style="margin: 0px;">
+    <div class="main-container">
+        <div class="column-one">
+            <div class="box-one"></div>
+            <div class="box-two">
+                <div class="box-three"></div>
+                <div class="box-four"></div>
+                <div class="box-three"></div>
+            </div>
+        </div>
+        <div class="column-two">
+            <div class="col-one"></div>
+            <div class="col-two">
+                <div class="col-two-row-one">
+                    <div class="child-one"></div>
+                    <div class="child-two"></div>
+                    <div class="child-three"></div>
+                </div>
+                <div class="col-two-row-two">
+                    <div class="row-child-one"></div>
+                    <div class="row-child-two"></div>
+                    <div class="row-child-three"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
